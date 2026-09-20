@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 370" width="100%" height="370">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0E1626" />
+      <stop offset="100%" stop-color="#080D18" />
+    </linearGradient>
+
+    <linearGradient id="cardBorderCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0369A1" stop-opacity="0.3" />
+    </linearGradient>
+
+    <linearGradient id="cardBorderIndigo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#4338CA" stop-opacity="0.3" />
+    </linearGradient>
+
+    <linearGradient id="cardBorderEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#065F46" stop-opacity="0.3" />
+    </linearGradient>
+
+    <linearGradient id="cardBorderAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#92400E" stop-opacity="0.3" />
+    </linearGradient>
+
+    <linearGradient id="flowLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+
+    <!-- Arrow Marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38BDF8" />
+    </marker>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .card-title { font-size: 11px; font-weight: 700; letter-spacing: 1px; }
+    .card-body { font-size: 10px; fill: #94A3B8; line-height: 1.4; }
+  </style>
+
+  <!-- Canvas Background -->
+  <rect width="900" height="370" rx="8" fill="#040711" stroke="#1E293B" stroke-width="1.2" />
+
+  <!-- Blueprint Header -->
+  <g transform="translate(30, 32)">
+    <text x="0" y="0" class="mono" font-size="11.5" font-weight="700" fill="#38BDF8" letter-spacing="2">
+      // CORE SUBSTRATE // END-TO-END EXECUTION PIPELINE
+    </text>
+    <text x="0" y="18" class="sans" font-size="11" fill="#64748B">
+      High-throughput deterministic AI infrastructure &amp; distributed state topology
+    </text>
+  </g>
+
+  <!-- Flow Connector Lines Behind Cards -->
+  <path d="M 215 185 L 255 185" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4 2" marker-end="url(#arrow)" />
+  <path d="M 435 185 L 475 185" stroke="#818CF8" stroke-width="2" stroke-dasharray="4 2" marker-end="url(#arrow)" />
+  <path d="M 655 185 L 695 185" stroke="#34D399" stroke-width="2" stroke-dasharray="4 2" marker-end="url(#arrow)" />
+
+  <!-- COLUMN 1: INGESTION -->
+  <g transform="translate(30, 75)">
+    <rect width="185" height="240" rx="8" fill="url(#cardBg)" stroke="url(#cardBorderCyan)" stroke-width="1.2" />
+    
+    <!-- Header Tag -->
+    <rect x="12" y="14" width="70" height="18" rx="4" fill="#0369A1" fill-opacity="0.3" />
+    <text x="20" y="27" class="mono" font-size="9" font-weight="600" fill="#38BDF8">STAGE 01</text>
+    
+    <text x="12" y="52" class="mono card-title" fill="#F8FAFC">CLIENT &amp; INGRESS</text>
+    
+    <!-- Specs -->
+    <g transform="translate(12, 72)" class="mono card-body">
+      <text x="0" y="0" fill="#38BDF8">▸</text>
+      <text x="12" y="0">gRPC &amp; REST APIs</text>
+
+      <text x="0" y="24" fill="#38BDF8">▸</text>
+      <text x="12" y="24">Zero-Trust mTLS</text>
+
+      <text x="0" y="48" fill="#38BDF8">▸</text>
+      <text x="12" y="48">Dynamic Limiter</text>
+
+      <text x="0" y="72" fill="#38BDF8">▸</text>
+      <text x="12" y="72">Request Sanitizer</text>
+
+      <text x="0" y="96" fill="#38BDF8">▸</text>
+      <text x="12" y="96">Sub-10ms Ingress</text>
+    </g>
+
+    <line x1="12" y1="200" x2="173" y2="200" stroke="#1E293B" stroke-width="1" />
+    <text x="12" y="222" class="mono" font-size="9" fill="#64748B">LATENCY: &lt; 8ms P99</text>
+  </g>
+
+  <!-- COLUMN 2: GATEWAY & ROUTING -->
+  <g transform="translate(250, 75)">
+    <rect width="185" height="240" rx="8" fill="url(#cardBg)" stroke="url(#cardBorderIndigo)" stroke-width="1.2" />
+    
+    <rect x="12" y="14" width="70" height="18" rx="4" fill="#4338CA" fill-opacity="0.3" />
+    <text x="20" y="27" class="mono" font-size="9" font-weight="600" fill="#A5B4FC">STAGE 02</text>
+    
+    <text x="12" y="52" class="mono card-title" fill="#F8FAFC">MODEL GATEWAY</text>
+    
+    <g transform="translate(12, 72)" class="mono card-body">
+      <text x="0" y="0" fill="#818CF8">▸</text>
+      <text x="12" y="0">Combo Routing Engine</text>
+
+      <text x="0" y="24" fill="#818CF8">▸</text>
+      <text x="12" y="24">RTK Compression</text>
+      <text x="12" y="36" font-size="8.5" fill="#64748B">(-60% to 90% Tokens)</text>
+
+      <text x="0" y="56" fill="#818CF8">▸</text>
+      <text x="12" y="56">Anti-Hallucination</text>
+
+      <text x="0" y="80" fill="#818CF8">▸</text>
+      <text x="12" y="80">Failover Substrates</text>
+    </g>
+
+    <line x1="12" y1="200" x2="173" y2="200" stroke="#1E293B" stroke-width="1" />
+    <text x="12" y="222" class="mono" font-size="9" fill="#64748B">ROUTING: AUTOMATED</text>
+  </g>
+
+  <!-- COLUMN 3: AGENT WORKFLOW ENGINE -->
+  <g transform="translate(470, 75)">
+    <rect width="185" height="240" rx="8" fill="url(#cardBg)" stroke="url(#cardBorderEmerald)" stroke-width="1.2" />
+    
+    <rect x="12" y="14" width="70" height="18" rx="4" fill="#065F46" fill-opacity="0.3" />
+    <text x="20" y="27" class="mono" font-size="9" font-weight="600" fill="#6EE7B7">STAGE 03</text>
+    
+    <text x="12" y="52" class="mono card-title" fill="#F8FAFC">AGENT SWARM DAG</text>
+    
+    <g transform="translate(12, 72)" class="mono card-body">
+      <text x="0" y="0" fill="#34D399">▸</text>
+      <text x="12" y="0">Idempotent DAG Loop</text>
+
+      <text x="0" y="24" fill="#34D399">▸</text>
+      <text x="12" y="24">Human-in-the-Loop</text>
+
+      <text x="0" y="48" fill="#34D399">▸</text>
+      <text x="12" y="48">Deterministic Evals</text>
+
+      <text x="0" y="72" fill="#34D399">▸</text>
+      <text x="12" y="72">Structured Tools</text>
+
+      <text x="0" y="96" fill="#34D399">▸</text>
+      <text x="12" y="96">State Checkpointing</text>
+    </g>
+
+    <line x1="12" y1="200" x2="173" y2="200" stroke="#1E293B" stroke-width="1" />
+    <text x="12" y="222" class="mono" font-size="9" fill="#64748B">STATE: DETERMINISTIC</text>
+  </g>
+
+  <!-- COLUMN 4: STORAGE & TELEMETRY -->
+  <g transform="translate(690, 75)">
+    <rect width="180" height="240" rx="8" fill="url(#cardBg)" stroke="url(#cardBorderAmber)" stroke-width="1.2" />
+    
+    <rect x="12" y="14" width="70" height="18" rx="4" fill="#78350F" fill-opacity="0.3" />
+    <text x="20" y="27" class="mono" font-size="9" font-weight="600" fill="#FDE68A">STAGE 04</text>
+    
+    <text x="12" y="52" class="mono card-title" fill="#F8FAFC">STORAGE &amp; SYNC</text>
+    
+    <g transform="translate(12, 72)" class="mono card-body">
+      <text x="0" y="0" fill="#FBBF24">▸</text>
+      <text x="12" y="0">Qdrant Vector DB</text>
+
+      <text x="0" y="24" fill="#FBBF24">▸</text>
+      <text x="12" y="24">PostgreSQL Ledger</text>
+
+      <text x="0" y="48" fill="#FBBF24">▸</text>
+      <text x="12" y="48">Apache Kafka Events</text>
+
+      <text x="0" y="72" fill="#FBBF24">▸</text>
+      <text x="12" y="72">OpenTelemetry Span</text>
+
+      <text x="0" y="96" fill="#FBBF24">▸</text>
+      <text x="12" y="96">100% Code Ownership</text>
+    </g>
+
+    <line x1="12" y1="200" x2="168" y2="200" stroke="#1E293B" stroke-width="1" />
+    <text x="12" y="222" class="mono" font-size="9" fill="#64748B">SECURITY: ZERO TRUST</text>
+  </g>
+
+  <!-- Footer System Bar -->
+  <g transform="translate(30, 342)" class="mono" font-size="10" fill="#64748B">
+    <circle cx="6" cy="-4" r="3" fill="#00E5FF" />
+    <text x="18" y="0">OPERATOR-GRADE ARCHITECTURE // VERIFIED BENGALURU DEPLOYMENT</text>
+    <text x="710" y="0" fill="#94A3B8">ZYNIQ LABS INFRASTRUCTURE</text>
+  </g>
+</svg>

@@ -1,94 +1,89 @@
-# Zyniq Labs
+<div align="center">
 
-> **Applied AI Infrastructure & Systems Engineering**  
-> Operating as **Zyniq Studios LLP** · Bengaluru, India
+<img src="assets/header.svg" alt="Zyniq Labs System Header" width="100%" />
 
----
+<br /><br />
 
-Zyniq Labs architects applied artificial intelligence infrastructure, deterministic workflow automation pipelines, and high-concurrency enterprise software platforms. We engineer systems designed for production reliability, operator-grade observability, and complete source code ownership.
-
-[Website](https://zyniqlabs.com) · [Documentation](https://zyniqlabs.com/docs) · [Inquiries](mailto:hello@zyniqlabs.com) · [X / Twitter](https://x.com/zyniqlabs) · [LinkedIn](https://www.linkedin.com/company/zyniqlabs)
-
----
-
-### Systems & Core Substrates
-
-```
-  ┌────────────────────────────────────────────────────────────────────────┐
-  │                           ZYNIQ LABS RUNTIME                           │
-  ├──────────────────────────────────┬─────────────────────────────────────┤
-  │   Applied AI Infrastructure      │    Deterministic Workflow Engine    │
-  │   - Model routing & gateways     │    - Idempotent state machine DAGs  │
-  │   - Verification & eval loops    │    - Bi-directional enterprise sync │
-  │   - RTK prompt compression       │    - Resilient agent execution      │
-  ├──────────────────────────────────┼─────────────────────────────────────┤
-  │   Distributed Systems Backend    │    Cloud Platform & Security        │
-  │   - High-throughput streaming    │    - Minimal rootless containerization│
-  │   - Low-latency async runtimes   │    - Zero-trust network topologies  │
-  │   - Vector & relational engines  │    - Immutable infrastructure (IaC) │
-  └──────────────────────────────────┴─────────────────────────────────────┘
-```
-
-#### 1. Applied AI Infrastructure
-* **Model Gateways & Routing:** Resilient inference proxies with latency-driven combo routing, adaptive backoff, and automatic failover across upstream model providers.
-* **Anti-Hallucination & Verification:** Multi-stage evaluation harnesses, deterministic rule verification, and automated regression guardrails for production agent systems.
-* **Context Engineering:** Real-time prompt compression (RTK / Caveman syntax), hybrid vector and lexical retrieval (RAG), and persistent memory hierarchies.
-
-#### 2. Workflow Automation & Agent Architecture
-* **State Machine Orchestration:** Deterministic directed acyclic graphs (DAGs) with strict idempotency, step-level replayability, and human-in-the-loop governance.
-* **Autonomous Task Swarms:** Role-specialized agent clusters with structured JSON-RPC / REST interfaces and bounded execution horizons.
-* **Enterprise Integration Substrates:** Bi-directional synchronization across core business backends, relational stores, messaging queues, and external APIs.
-
-#### 3. High-Concurrency Platform Engineering
-* **Low-Latency Backends:** Non-blocking asynchronous architectures built for sustained throughput and minimal resource footprints.
-* **Streaming & Event Buses:** Event-driven topologies powered by Kafka and Redis pub/sub for real-time telemetry and state distribution.
-* **Database Engineering:** High-performance PostgreSQL data models, zero-downtime migration pipelines, and indexed vector embeddings.
+<p align="center">
+  <a href="https://zyniqlabs.com"><strong>Website</strong></a> &nbsp;•&nbsp;
+  <a href="https://zyniqlabs.com/services"><strong>Capabilities</strong></a> &nbsp;•&nbsp;
+  <a href="https://x.com/zyniqlabs"><strong>X / Twitter</strong></a> &nbsp;•&nbsp;
+  <a href="https://www.linkedin.com/company/zyniqlabs"><strong>LinkedIn</strong></a> &nbsp;•&nbsp;
+  <a href="mailto:hello@zyniqlabs.com"><strong>Inquiries</strong></a>
+</p>
 
 ---
 
-### Engineering Doctrine
+</div>
 
-> *"Restraint is authority. Trust is not earned through marketing. It is earned through consistent execution, transparent experimentation, and the disciplined refusal to overclaim."*
+### Executive Summary
 
-* **100% Code Ownership:** All architectures, pipelines, and deployment manifests are delivered with complete source code ownership, clean documentation, and zero vendor lock-in.
-* **Measurable Verification:** Every component is governed by verifiable performance benchmarks, deterministic unit/integration suites, and continuous static analysis.
-* **Zero Vanity Metrics:** We reject inflated capability claims, synthetic benchmarks, and decorative complexity in favor of observable operational stability.
+Zyniq Labs architects applied artificial intelligence infrastructure, deterministic workflow automation pipelines, and enterprise software platforms with **100% source code ownership**. 
 
----
-
-### Technology Foundations
-
-| Domain | Production Tooling |
-| :--- | :--- |
-| **Core Systems & Languages** | Rust · Go · TypeScript · Python · C++ · Node.js · Bun |
-| **Applied AI & Context** | PyTorch · Hugging Face · Qdrant · RAG Pipelines · Prompt Compression |
-| **Data & Messaging** | PostgreSQL · Redis · Apache Kafka · ClickHouse |
-| **Cloud, Runtime & DevOps** | Docker · Kubernetes · Linux · Terraform · Cloudflare · GitHub Actions |
+Operating as **Zyniq Studios LLP** from Bengaluru, India, we build custom intelligence substrates engineered for production scale, operator-grade observability, and deterministic reliability.
 
 ---
 
-### Entity Credentials & Verification
+### Systems Architecture & Execution Pipeline
 
-Zyniq Labs operates as **Zyniq Studios LLP**, an officially incorporated entity in Bengaluru, Karnataka, India. All regulatory credentials are verifiable through official Government of India registries:
+The Zyniq Labs substrate processes data through a deterministic, four-stage lifecycle designed for high throughput and zero data loss:
+
+<div align="center">
+  <img src="assets/architecture.svg" alt="Zyniq Labs Systems Architecture" width="100%" />
+</div>
+
+<br />
+
+#### Key Architectural Capabilities:
+* **Dynamic Model Gateway:** Latency-optimized combo routing across upstream LLMs, adaptive backoff substrates, and automatic health-checked failover.
+* **RTK Prompt Compression:** Proprietary token compression reducing latency and cost by 60% to 90% prior to upstream dispatch.
+* **Deterministic Agent DAGs:** Idempotent, state-checkpointed multi-agent execution swarms with auditable human-in-the-loop validation gates.
+* **Hybrid Vector & Relational Sync:** Sub-10ms similarity indexing powered by Qdrant combined with transactional ACID durability in PostgreSQL.
+
+---
+
+### Technology Substrates & Tooling
+
+Every component in our stack is chosen for deterministic performance, memory safety, and cloud-native resilience:
+
+<div align="center">
+  <img src="assets/tech-matrix.svg" alt="Zyniq Labs Technology Matrix" width="100%" />
+</div>
+
+---
+
+### Engineering Doctrine: *Restraint Is Authority*
+
+> *"Trust is not earned through marketing. It is earned through consistent execution, transparent experimentation, and the disciplined refusal to overclaim."*
+
+* **100% Source Code Ownership:** All client platforms, pipelines, and deployment manifests are transferred with complete code ownership, verifiable tests, and zero vendor lock-in.
+* **Operator-Grade Reliability:** Systems are architected with explicit memory limits, circuit breakers, and zero-trust mTLS security models.
+* **Measurable Verification:** Every operational capability is backed by reproducible benchmarks, property-based tests, and live telemetry.
+
+---
+
+### Corporate Identity & Verification
+
+Zyniq Labs is an officially registered Limited Liability Partnership under the Ministry of Corporate Affairs, Government of India:
 
 ```yaml
-Entity: Zyniq Studios LLP
-Location: Bengaluru, Karnataka, India
-LLPIN: ACR-7293 (Ministry of Corporate Affairs)
-GSTIN: 29AAEFZ1877G1ZO (Goods & Services Tax)
-MSME Udyam: UDYAM-KR-09-0036284
+Entity Legal Name: Zyniq Studios LLP
+Registered Base: Bengaluru, Karnataka, India
+LLPIN Identifier: ACR-7293
+GSTIN Tax ID: 29AAEFZ1877G1ZO
+MSME Recognition: UDYAM-KR-09-0036284
 ```
 
 ---
 
-### Communications & Engagements
+### Operational Channels & Direct Inquiries
 
-* **Official Portal:** [zyniqlabs.com](https://zyniqlabs.com)
+* **Engineering Portal:** [https://zyniqlabs.com](https://zyniqlabs.com)
 * **General & Sales Inquiries:** [hello@zyniqlabs.com](mailto:hello@zyniqlabs.com)
 * **Technical Support:** [support@zyniqlabs.com](mailto:support@zyniqlabs.com)
-* **Phone / IVR:** +91 080 6217 7351
+* **IVR & Telephony:** +91 080 6217 7351
 * **Direct Operations (WhatsApp):** [+91 6361612030](https://wa.me/916361612030)
-* **Social Dispatches:** [X (@zyniqlabs)](https://x.com/zyniqlabs) · [LinkedIn](https://www.linkedin.com/company/zyniqlabs)
+* **Social Dispatches:** [@zyniqlabs on X](https://x.com/zyniqlabs) · [LinkedIn](https://www.linkedin.com/company/zyniqlabs)
 
 <br />
 

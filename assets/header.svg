@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 230" width="100%" height="230">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="50%" stop-color="#080E1C" />
+      <stop offset="100%" stop-color="#040710" />
+    </linearGradient>
+
+    <!-- Cyan Ambient Radial Glow -->
+    <radialGradient id="cyanGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.14" />
+      <stop offset="60%" stop-color="#0077FF" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="35%" stop-color="#00E5FF" stop-opacity="0.6" />
+      <stop offset="65%" stop-color="#3B82F6" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+
+    <!-- Subtle Technical Grid Pattern -->
+    <pattern id="techGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1E293B" stroke-width="0.75" stroke-opacity="0.4" />
+      <circle cx="30" cy="0" r="1" fill="#38BDF8" fill-opacity="0.3" />
+    </pattern>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif; }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="898" height="228" rx="10" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="1.5" />
+  
+  <!-- Subtle Grid Overlay -->
+  <rect x="2" y="2" width="896" height="226" rx="9" fill="url(#techGrid)" />
+  <rect x="2" y="2" width="896" height="226" rx="9" fill="url(#cyanGlow)" />
+
+  <!-- Top System Status Pill -->
+  <g transform="translate(450, 42)">
+    <rect x="-165" y="-14" width="330" height="28" rx="14" fill="#0B132B" stroke="#00E5FF" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="-140" cy="0" r="4" fill="#10B981" />
+    <text x="-126" y="4.5" class="mono" font-size="11" font-weight="600" fill="#E2E8F0" letter-spacing="1.2">SYSTEM STATUS // RUNTIME ONLINE</text>
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="450" y="112" class="sans" font-size="34" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="3.5">
+    ZYNIQ LABS
+  </text>
+  
+  <text x="450" y="142" class="mono" font-size="13" font-weight="500" fill="#7DD3FC" text-anchor="middle" letter-spacing="2">
+    APPLIED AI INFRASTRUCTURE &amp; SYSTEMS ENGINEERING
+  </text>
+
+  <!-- Divider Line -->
+  <line x1="160" y1="164" x2="740" y2="164" stroke="#1E293B" stroke-width="1" stroke-dasharray="4 4" />
+
+  <!-- Bottom Telemetry Badges -->
+  <g transform="translate(160, 185)" class="mono" font-size="10.5" fill="#94A3B8">
+    <!-- Item 1 -->
+    <text x="0" y="8" fill="#38BDF8">LOC:</text>
+    <text x="32" y="8" fill="#CBD5E1">Bengaluru, IN</text>
+
+    <!-- Separator -->
+    <text x="145" y="8" fill="#334155">//</text>
+
+    <!-- Item 2 -->
+    <text x="165" y="8" fill="#38BDF8">ENTITY:</text>
+    <text x="218" y="8" fill="#CBD5E1">Zyniq Studios LLP</text>
+
+    <!-- Separator -->
+    <text x="365" y="8" fill="#334155">//</text>
+
+    <!-- Item 3 -->
+    <text x="385" y="8" fill="#38BDF8">STANDARD:</text>
+    <text x="458" y="8" fill="#CBD5E1">Operator-Grade Execution</text>
+  </g>
+</svg>

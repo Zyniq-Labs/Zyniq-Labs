@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 170" width="100%" height="170">
+  <defs>
+    <linearGradient id="matrixBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#070B14" />
+      <stop offset="100%" stop-color="#040710" />
+    </linearGradient>
+    <linearGradient id="rowBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; }
+    .label { font-size: 10px; font-weight: 700; fill: #38BDF8; letter-spacing: 1.5px; }
+    .item { font-size: 11px; fill: #E2E8F0; font-weight: 500; }
+    .dot { fill: #475569; font-size: 11px; }
+  </style>
+
+  <!-- Container -->
+  <rect width="900" height="170" rx="8" fill="url(#matrixBg)" stroke="#1E293B" stroke-width="1.2" />
+
+  <!-- Row 1: Languages -->
+  <g transform="translate(24, 20)">
+    <rect width="852" height="38" rx="6" fill="#0C1220" stroke="#1E293B" stroke-width="1" />
+    <text x="18" y="24" class="mono label">SYSTEMS &amp; CORE</text>
+    <line x1="165" y1="10" x2="165" y2="28" stroke="#1E293B" stroke-width="1" />
+    <g transform="translate(185, 23)" class="mono item">
+      <text x="0" y="0">Rust</text> <text x="40" y="0" class="dot">·</text>
+      <text x="55" y="0">Go</text> <text x="80" y="0" class="dot">·</text>
+      <text x="95" y="0">TypeScript</text> <text x="175" y="0" class="dot">·</text>
+      <text x="190" y="0">Python</text> <text x="245" y="0" class="dot">·</text>
+      <text x="260" y="0">C++</text> <text x="295" y="0" class="dot">·</text>
+      <text x="310" y="0">Node.js</text> <text x="370" y="0" class="dot">·</text>
+      <text x="385" y="0">Bun</text>
+    </g>
+  </g>
+
+  <!-- Row 2: AI & Retrieval -->
+  <g transform="translate(24, 68)">
+    <rect width="852" height="38" rx="6" fill="#0C1220" stroke="#1E293B" stroke-width="1" />
+    <text x="18" y="24" class="mono label">AI &amp; RETRIEVAL</text>
+    <line x1="165" y1="10" x2="165" y2="28" stroke="#1E293B" stroke-width="1" />
+    <g transform="translate(185, 23)" class="mono item">
+      <text x="0" y="0">PyTorch</text> <text x="65" y="0" class="dot">·</text>
+      <text x="80" y="0">HuggingFace</text> <text x="175" y="0" class="dot">·</text>
+      <text x="190" y="0">Qdrant Vector DB</text> <text x="325" y="0" class="dot">·</text>
+      <text x="340" y="0">RTK Prompt Compression</text> <text x="520" y="0" class="dot">·</text>
+      <text x="535" y="0">Anti-Hallucination Evals</text>
+    </g>
+  </g>
+
+  <!-- Row 3: Infrastructure -->
+  <g transform="translate(24, 116)">
+    <rect width="852" height="38" rx="6" fill="#0C1220" stroke="#1E293B" stroke-width="1" />
+    <text x="18" y="24" class="mono label">CLOUD &amp; PLATFORM</text>
+    <line x1="165" y1="10" x2="165" y2="28" stroke="#1E293B" stroke-width="1" />
+    <g transform="translate(185, 23)" class="mono item">
+      <text x="0" y="0">Docker Distroless</text> <text x="145" y="0" class="dot">·</text>
+      <text x="160" y="0">Kubernetes</text> <text x="250" y="0" class="dot">·</text>
+      <text x="265" y="0">Terraform IaC</text> <text x="375" y="0" class="dot">·</text>
+      <text x="390" y="0">Apache Kafka</text> <text x="495" y="0" class="dot">·</text>
+      <text x="510" y="0">PostgreSQL</text> <text x="600" y="0" class="dot">·</text>
+      <text x="615" y="0">Cloudflare Edge</text>
+    </g>
+  </g>
+</svg>
